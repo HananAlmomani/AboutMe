@@ -1,0 +1,21 @@
+h1{
+    color: rgb(7, 27, 119);
+    font-size: 150%;
+    background-color: rgb(196, 188, 188);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#para1{
+    color: rgb(86, 86, 247);
+    font-size: 120%;
+}
+
+#para2{
+    color: rgb(115, 73, 182);
+    font-size: 130%;
+}
+
+#para3{
+    color: rgb(182, 186, 243);
+    font-size: 120%;
+}
