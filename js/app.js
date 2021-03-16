@@ -73,9 +73,11 @@ while((myMajor !== 'yes' && myMajor !== 'y') && (myMajor !== 'no' && myMajor!== 
 if (myMajor.toLowerCase() === 'no'|| myMajor.toLowerCase() === 'n')
 {
   alert('you got that right!');
+  console.log(myMajor);
   score++;
 } else {
   alert('no i hate physics');
+  console.log(myMajor);
 }
 
 
@@ -88,10 +90,12 @@ while((hobby !== 'yes' && hobby!== 'y') && (hobby !== 'no' && hobby !== 'n'))
 if (hobby.toLowerCase() === 'no' || hobby.toLowerCase() === 'n')
 {
   alert('actually i do');
+  console.log(hobby);
 
 } else
 {
   alert('so true!');
+  console.log(hobby);
   score++;
 }
 
@@ -101,17 +105,20 @@ for (let i=4 ; i>1 ; i--)
   if (number === '10')
   {
     alert('You are great');
+    console.log(number);
     score++;
     break;
   }
   else if(number>10)
   {
     alert('You are too high');
+    console.log(number);
     number = prompt('No guess the number between 5-15 another time ? you have just  ' +i+' time');
   }
   else if(number<10)
   {
     alert('You are too low');
+    console.log(number);
     number = prompt('No guess the number between 5-15 another time ? you have just' +i+' time');
   }
 }
@@ -125,6 +132,7 @@ for (let h=5 ;h>0 ; h--)
   if (fav == marr[0] || fav == marr[1] || fav ==marr[2] )
   {
     alert('you are great');
+    console.log(fav);
     score++;
     h=0;
   }
@@ -135,6 +143,7 @@ for (let h=5 ;h>0 ; h--)
 }
 
 alert('you got  '+score+' out of 7') ;
+console.log(score);
 
 
 

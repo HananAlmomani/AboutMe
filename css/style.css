@@ -19,3 +19,9 @@ h1{
     color: rgb(121, 125, 182);
     font-size: 120%;
 }
+
+body{
+    margin: 100px;
+    background-color: cyan;
+}
+
