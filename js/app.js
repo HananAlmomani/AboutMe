@@ -1,5 +1,7 @@
 'use strict';
 
+let score=0;
+
 alert ('Hello my number one fan!');
 
 let variable2 =prompt('what is your name?');
@@ -24,6 +26,7 @@ else if(userName.toLowerCase() === 'yes')
 {
   alert('your answer is so correct, happy me!!');
   console.log(userName);
+  score++;
 }
 
 
@@ -38,6 +41,7 @@ if (age.toLowerCase() === 'no'|| age.toLowerCase() === 'n')
 {
   alert('yes yes good answer');
   console.log(age);
+  score++;
 } else {
   alert('now im mad im not that old');
   console.log(age);
@@ -53,6 +57,7 @@ if (country.toLowerCase() === 'no'|| country.toLowerCase() === 'n')
 {
   alert('yes im poor');
   console.log(country);
+  score++;
 
 } else {
   alert('i really wish that!');
@@ -68,6 +73,7 @@ while((myMajor !== 'yes' && myMajor !== 'y') && (myMajor !== 'no' && myMajor!== 
 if (myMajor.toLowerCase() === 'no'|| myMajor.toLowerCase() === 'n')
 {
   alert('you got that right!');
+  score++;
 } else {
   alert('no i hate physics');
 }
@@ -82,7 +88,53 @@ while((hobby !== 'yes' && hobby!== 'y') && (hobby !== 'no' && hobby !== 'n'))
 if (hobby.toLowerCase() === 'no' || hobby.toLowerCase() === 'n')
 {
   alert('actually i do');
+
 } else
 {
   alert('so true!');
+  score++;
 }
+
+let number = prompt('Now guess how many movies i love between 5-15?');
+for (let i=4 ; i>1 ; i--)
+{
+  if (number === '10')
+  {
+    alert('You are great');
+    score++;
+    break;
+  }
+  else if(number>10)
+  {
+    alert('You are too high');
+    number = prompt('No guess the number between 5-15 another time ? you have just  ' +i+' time');
+  }
+  else if(number<10)
+  {
+    alert('You are too low');
+    number = prompt('No guess the number between 5-15 another time ? you have just' +i+' time');
+  }
+}
+
+
+let marr=[7,10,3];
+alert('can you guess my 3 favorite numbers?');
+let fav = prompt('guess one number of them between 2-20 (you have 6 attemp)');
+for (let h=5 ;h>0 ; h--)
+{
+  if (fav == marr[0] || fav == marr[1] || fav ==marr[2] )
+  {
+    alert('you are great');
+    score++;
+    h=0;
+  }
+  else
+  {
+    fav = prompt('guess one number of them between 2-20 you have just ' +h+ ' attemp');
+  }
+}
+
+alert('you got  '+score+' out of 7') ;
+
+
+
