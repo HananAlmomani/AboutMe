@@ -99,7 +99,9 @@ if (hobby.toLowerCase() === 'no' || hobby.toLowerCase() === 'n')
   score++;
 }
 
-let number = prompt('Now guess how many movies i love between 5-15?');
+let q6=function ()
+{
+  let number = prompt('Now guess how many movies i love between 5-15?');
 for (let i=4 ; i>1 ; i--)
 {
   if (number === '10')
@@ -122,9 +124,12 @@ for (let i=4 ; i>1 ; i--)
     number = prompt('No guess the number between 5-15 another time ? you have just' +i+' time');
   }
 }
+}
 
-
-let marr=[7,10,3];
+q6();
+let q7 = function()
+{
+  let marr=[7,10,3];
 alert('can you guess my 3 favorite numbers?');
 let fav = prompt('guess one number of them between 2-20 (you have 6 attemp)');
 for (let h=5 ;h>0 ; h--)
@@ -141,7 +146,9 @@ for (let h=5 ;h>0 ; h--)
     fav = prompt('guess one number of them between 2-20 you have just ' +h+ ' attemp');
   }
 }
+}
 
+q7();
 alert('you got  '+score+' out of 7') ;
 console.log(score);
 
