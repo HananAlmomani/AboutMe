@@ -11,7 +11,10 @@ alert('lets see if you will know me or not,ready? set ,gooo!');
 
 alert('please answer with yes or no');
 
-let userName =prompt('Is my name Hanan?');
+
+let myName = function()
+{
+  let userName =prompt('Is my name Hanan?');
 while((userName !== 'yes' && userName !== 'y') && (userName !== 'no' && userName !== 'n'))
 {
   userName =prompt('Is my name Hanan?');
@@ -28,10 +31,13 @@ else if(userName.toLowerCase() === 'yes')
   console.log(userName);
   score++;
 }
+}
+ myName();
 
 
-
-let age =prompt('Do you think im older than 40?');
+let myAge = function()
+{
+  let age =prompt('Do you think im older than 40?');
 while((age !== 'yes' && age !== 'y') && (age !== 'no' && age !== 'n'))
 {
   age =prompt('Do you think im older than 40?');
@@ -46,8 +52,12 @@ if (age.toLowerCase() === 'no'|| age.toLowerCase() === 'n')
   alert('now im mad im not that old');
   console.log(age);
 }
+}
+myAge();
 
-let country=prompt('Do i live in maldives?');
+let myCountry = function()
+{
+  let country=prompt('Do i live in maldives?');
 while((country !== 'yes' && country !== 'y') && (country !== 'no' && country !== 'n'))
 {
   country =prompt('Do i live in maldives?');
@@ -63,8 +73,12 @@ if (country.toLowerCase() === 'no'|| country.toLowerCase() === 'n')
   alert('i really wish that!');
   console.log(country);
 }
+}
+myCountry(); 
 
-let myMajor =prompt('Am i majored in physics?');
+let major = function()
+{
+  let myMajor =prompt('Am i majored in physics?');
 while((myMajor !== 'yes' && myMajor !== 'y') && (myMajor !== 'no' && myMajor!== 'n'))
 {
   myMajor =prompt('Am i majored in physics?');
@@ -79,9 +93,13 @@ if (myMajor.toLowerCase() === 'no'|| myMajor.toLowerCase() === 'n')
   alert('no i hate physics');
   console.log(myMajor);
 }
+}
+major(); 
 
 
-let hobby =prompt('do you think i like playing chess?');
+let hobby = function()
+{
+  let hobby =prompt('do you think i like playing chess?');
 while((hobby !== 'yes' && hobby!== 'y') && (hobby !== 'no' && hobby !== 'n'))
 {
   hobby =prompt('do you think i like playing chess?');
@@ -98,6 +116,8 @@ if (hobby.toLowerCase() === 'no' || hobby.toLowerCase() === 'n')
   console.log(hobby);
   score++;
 }
+}
+hobby(); 
 
 let q6=function ()
 {
