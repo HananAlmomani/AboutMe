@@ -9,7 +9,7 @@ alert('Hi there ' + variable2 );
 
 alert('lets see if you will know me or not,ready? set ,gooo!');
 
-alert('please answer with yes or no');
+alert('please answer with yes,no or y,n');
 
 
 let myName = function()
@@ -65,7 +65,7 @@ let myCountry = function()
   }
   if (country.toLowerCase() === 'no'|| country.toLowerCase() === 'n')
   {
-    alert('yes im poor');
+    alert('yes unfortuntlly');
     console.log(country);
     score++;
 

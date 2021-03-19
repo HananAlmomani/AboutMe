@@ -1,27 +1,27 @@
 h1{
-    color: rgb(7, 27, 119);
+    color: rgb(27, 66, 240);
     font-size: 150%;
     background-color: rgb(196, 188, 188);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Dancing Script', cursive;
 }
 
 #para1{
-    color: rgb(86, 86, 247);
+    color: rgb(241, 19, 223);
     font-size: 120%;
 }
 
 #para2{
-    color: rgb(115, 73, 182);
+    color: rgb(255, 9, 9);
     font-size: 130%;
 }
 
 #para3{
-    color: rgb(121, 125, 182);
+    color: rgb(140, 180, 28);
     font-size: 120%;
 }
 
 body{
     margin: 100px;
-    background-color: cyan;
+    background-color: rgb(6, 7, 7);
 }
 
