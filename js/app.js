@@ -149,34 +149,31 @@ let q6=function ()
 q6();
 let q7 = function()
 {
-  let marr=[7,10,3];
+  let arr=[7,10,3];
   alert('can you guess my 3 favorite numbers?');
-  let fav =Number(prompt('guess one number of them between 2-20 (you have 6 attemp)'));
-
-
-  for (let h=5 ;h>0 ; h--)
+  let Q= Number(prompt('guess one number of them between 2-20 (you have 6 attempt)'));
+  for(let i = 5;i>0;i--)
   {
-    for (let i=0;i<3;i++)
+    for(let w=0 ; w<arr.length;w++)
     {
-      if (fav === marr[i])
+      if(Q===arr[w])
       {
         alert('you are great');
-        console.log(fav);
+        console.log(Q);
         score++;
-        h=0;
+        i=0;
       }
     }
-    if(h!==0){
-      fav = prompt('guess one number of them between 2-20 you have just ' +h+ ' attemp');
+    if(i!==0)
+    {
+      Q= Number(prompt('guess one number of them between 2-20 you have '+i+' Ateempt'));
     }
-
   }
-  alert('the correct answers were 3,7,10');
 };
-
 q7();
 alert('you got  '+score+' out of 7') ;
 console.log(score);
+
 
 
 
